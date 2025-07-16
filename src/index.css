@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme {
+  --color-green: #28983a;
+}
+
+body {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+/* smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
