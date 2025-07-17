@@ -51,7 +51,16 @@ const HeroSection = () => {
       scale: 1,
     });
 
-    const tl = gsap.timeline();
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".image-container",
+        start: "top top",
+        end: "200% top",
+        scrub: true,
+        pin: true,
+        anticipatePin: 1, // smooth pinning
+      },
+    });
     tl.to(".hero-image", {
       opacity: 1,
       x: "0%",
