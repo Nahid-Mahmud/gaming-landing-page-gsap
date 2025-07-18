@@ -7,44 +7,6 @@ import { useGSAP } from "@gsap/react";
 
 const HeroSection = () => {
   useGSAP(() => {
-    // Timeline for scroll animation
-    // gsap.set(".hero-image", {
-    //   opacity: 0,
-    //   x: "-100%",
-    //   scale: 1,
-    // });
-    // const tl = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: ".image-container",
-    //     start: "top top",
-    //     end: "200% top", // make scroll duration longer for smoother motion
-    //     scrub: true,
-    //     pin: true, // pin the section during scroll
-    //   },
-    // });
-    // tl.to(".hero-image", {
-    //   opacity: 1,
-    //   x: "0%",
-    //   duration: 2,
-    //   scale: 0.7,
-    //   ease: "power2.out",
-    // })
-    //   .to(".hero-image", {
-    //     //   y: "-50%", // exit to right
-    //     //   opacity: 0,
-    //     rotate: 360,
-    //     duration: 3,
-    //     scale: 1,
-    //     ease: "power2.inOut",
-    //   })
-    //   .to(".hero-image", {
-    //     y: "-10%", // exit to right
-    //     duration: 2,
-    //     scale: 0.8,
-    //     ease: "power2.inOut",
-    //   });
-    // same animation but without scrollTrigger
-
     gsap.set(".hero-image", {
       opacity: 0,
       x: "-100%",
